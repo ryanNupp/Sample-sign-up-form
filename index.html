@@ -6,6 +6,39 @@
     <title>Sign Up</title>
 </head>
 <body>
-    <h1>Sign Up</h1>
+    <div>
+        <h1></h1>
+    </div>
+    <div id="main-form">
+        <h1>Sign Up</h1>
+        <form action="/handling" method="post">
+            <ul>
+                <li>
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="first_name">
+                </li>
+                <li>
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="last_name">
+                </li>
+                <li>
+                    <label for="mail">Email</label>
+                    <input type="email" id="mail" name="user_email">
+                </li>
+                <li>
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+                </li>
+                <li>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="pass_word">
+                </li>
+                <li>
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirm_pass">
+                </li>
+            </ul>
+        </form>
+    </div>
 </body>
 </html>
