@@ -1,44 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 </head>
+
 <body>
-    <div>
-        <h1></h1>
-    </div>
-    <div id="main-form">
-        <h1>Sign Up</h1>
-        <form action="/handling" method="post">
-            <ul>
-                <li>
-                    <label for="firstName">First Name</label>
-                    <input type="text" id="firstName" name="first_name">
-                </li>
-                <li>
-                    <label for="lastName">Last Name</label>
-                    <input type="text" id="lastName" name="last_name">
-                </li>
-                <li>
-                    <label for="mail">Email</label>
-                    <input type="email" id="mail" name="user_email">
-                </li>
-                <li>
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone">
-                </li>
-                <li>
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="pass_word">
-                </li>
-                <li>
-                    <label for="confirmPassword">Confirm Password</label>
-                    <input type="password" id="confirmPassword" name="confirm_pass">
-                </li>
-            </ul>
-        </form>
+    <div class="container">
+        <div class="item" id="left">
+            <img src="Images/clement-proust-bDGgOlguqJA-unsplash.jpg">
+        </div>
+
+        <div class="item" id="right">
+            <div class="surround">
+                <h1>Get started now!<br>Sign up today!</h1>
+            </div>
+            <div id="login">
+                <h1>Sign Up</h1>
+                <form action="/handling" method="post">
+                    <div class="form-item">
+                        <label for="firstName">FIRST NAME</label>
+                        <input type="text" id="firstName" name="first_name">
+                    </div>
+                    <div class="form-item">
+                        <label for="lastName">LAST NAME</label>
+                        <input type="text" id="lastName" name="last_name">
+                    </div>
+                    <div class="form-item">
+                        <label for="mail">EMAIL</label>
+                        <input type="email" id="mail" name="user_email">
+                    </div>
+                    <div class="form-item">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-item">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" name="pass_word">
+                    </div>
+                    <div class="form-item">
+                        <label for="confirmPassword">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirmPassword" name="confirm_pass">
+                    </div>
+
+                </form>
+            </div>
+            <div class="surround">
+                <button>Create Account</button>
+                <p>Already have an account? <a href="index.html">Log in</a></p>
+            </div>
+
+        </div>
     </div>
 </body>
+
 </html>
