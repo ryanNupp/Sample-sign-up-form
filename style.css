@@ -7,20 +7,16 @@
 
   --clr-background-primary: white;
   --clr-background-secondary: rgb(245, 245, 245);
-
   --clr-shadow: lightgray;
 
   --clr-text-primary: black;
   --clr-text-light: gray;
-
   --clr-button-text: white;
   --clr-form-border: rgba(42, 55, 60, 0.15);
 
   --font-main: 'Switzer-Regular';
   --font-bold: 'Switzer-Bold';
-
   --font-backup: sans-serif;
-
   font-size: 15px;
 }
 
@@ -47,7 +43,7 @@ body, html, .container {
   flex-grow: 0;
   flex-shrink: 2;
   position: relative;
-  z-index: -1;
+  z-index: 0;
   text-wrap: nowrap;
 }
 
@@ -57,26 +53,11 @@ body, html, .container {
   object-fit: cover;
 }
 
-#logo-backdrop {
-  background-color: rgba(0, 0, 0, .5);
-  position: absolute;
-  top: 20%;
-  height: 20%;
-  width: 100%;
-}
-
-#logo-backdrop img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
 #left p {
   color: white;
   font-size: 0.8em;
   position: absolute;
-  bottom: 0px;
+  bottom: 10px;
   width: 100%;
   text-align: center;
   font-family: var(--font-main);
@@ -94,15 +75,29 @@ body, html, .container {
   color: gray;
 }
 
+#logo-backdrop {
+  background-color: rgba(0, 0, 0, .5);
+  position: absolute;
+  top: 20%;
+  height: 20%;
+  width: 100%;
+}
+
+#logo-backdrop img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30vh;
+}
+
 /* right side of screen, flex box but also contains flex boxes */
 #right {
   flex-grow: 1;
   flex-shrink: 0;
-  
   display: flex;
   flex-flow: column nowrap;
-
   overflow: auto;
+  z-index: 1;
 }
 
 /* main login form */
@@ -124,7 +119,7 @@ body, html, .container {
 
   display: grid;
   grid-gap: 2rem;
-  grid-template-columns: 15rem 15rem;
+  grid-template-columns: 17rem 17rem;
   grid-template-rows: flex;
 }
 
